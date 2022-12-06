@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+	<display-name>
+		Basket-ball live score
+	</display-name>
+
+	<servlet>
+		<servlet-name>Init</servlet-name>
+		<servlet-class>servlet.InitServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Team</servlet-name>
+		<servlet-class>servlet.SetEquipe</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Match</servlet-name>
+		<servlet-class>servlet.MatchServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Init</servlet-name>
+		<url-pattern>/init</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Team</servlet-name>
+		<url-pattern>/team</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Match</servlet-name>
+		<url-pattern>/see</url-pattern>
+	</servlet-mapping>
+
+</web-app>
